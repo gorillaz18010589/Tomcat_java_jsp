@@ -1,0 +1,12 @@
+<!-- 目標:檔案上傳,讓後端接收 -->
+<!-- 連接Brad07 -->
+<!-- 檔案內容不會透過url傳遞,而是塞在body裡 -->
+<!-- 所以檔案上傳只能用post -->
+<!-- 在檔案上傳一定要加上編碼方式 enctype(一種格式)multipart(多部分切割)/form-data(切表單資料)-->
+<meta charset="UTF-8">
+<form action="Brad07" method="post"
+enctype="multipart/form-data">
+	<input type="file" name="upload">
+	<hr>
+	<input type="submit" value="upload">
+</form>

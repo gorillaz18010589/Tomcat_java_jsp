@@ -1,0 +1,17 @@
+<script>
+ 	function getAllCookies(){
+	 		document.cookie =("name=Brad"); /*因為沒有cookie種上cookie*/
+	 		document.cookie = ("age=18");
+	 		let decodeCookies = decodeURIComponent(document.cookie); /*deCodeURIComponent():取得文件元件*/
+	 		document.write(decodeCookies + "<hr>"); //輸出在螢幕上看一下cookie
+	 		let cookiesArray = decodeCookies.split(";");  //把得到的資料把;號切開拿到物件陣列,做尋訪
+		 		for(let i=0; i<cookiesArray.length; i++){
+		 			let cookie = cookiesArray[i]; //拿到name=Brad 在切割
+		 			let row = cookie.split("=");
+		 			document.write(row[0] + ":" + row[1] + "<br>");
+ 				}
+	 		
+ 	}
+ 	
+ 	getAllCookies();
+</script>

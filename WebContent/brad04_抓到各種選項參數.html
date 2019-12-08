@@ -1,0 +1,27 @@
+<!-- 05處理04的事情 -->
+<!-- 目標當你選擇男生或女生,傳回資料顯示男生或女生 -->
+<!-- radio本來是兩個都可以選,加了name="gender"候選完澤一群組化 -->
+<!-- value =>值 -->
+<!--  chcked=>預設勾選-->
+<meta charset="UTF-8">
+<form action="Brad05">
+	<input type="radio" name="gender" value="m" checked>Malie
+	<input type="radio" name="gender" value="f">Female
+	<hr>
+	<input type="checkbox" name="hobby" value="1">打電腦
+	<input type="checkbox" name="hobby" value="2">打籃球<br>
+	<input type="checkbox" name="hobby" value="3">打手機
+	<input type="checkbox" name="hobby" value="4">打人<br>
+	<input type="checkbox" name="hobby" value="5">打白目
+	<input type="checkbox" name="hobby" value="6">打手槍<br>
+	<hr>
+	<select name="zipcode"> <!-- 主題在這所以在這抓name -->
+		<option value="401">北屯區</option> <!-- 我靠郵遞區號抓不一定要顯現出來用這抓參數 -->
+		<option value="402">南屯區</option>
+		<option value="403">西屯區</option>
+		<option value="404">東屯區</option>
+	</select>
+	<hr>
+	<textarea rows="10" cols="40" name="text"></textarea>
+ 	<input type="submit" value="送出">
+</form>
